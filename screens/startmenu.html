@@ -1,0 +1,50 @@
+<style>
+    #startmenu{
+        color: white;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+</style>
+<!--<img src="images/Light_Cycle_51.jpg"/>-->
+<div id="startmenu" style="display:none;">
+    <h1>Tron Lightcycle game</h1>
+    <div id="startmenu-menucontainer">
+        <div id="username">Please provide your username</div>
+
+        <input id="input" autocomplete="off" required="true"/>
+
+        <div style="margin-top: 10px">
+            Number of enemies:
+            <select id="startmenu-no_enemies">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+
+        <div>
+            Size of the arena:
+            <select id="startmenu-grid_size">
+                <option value="200">200</option>
+                <option value="400">400</option>
+                <option value="600">600</option>
+                <option value="800">800</option>
+                <option value="1000">1000</option>
+            </select>
+        </div>
+
+    </div>
+    <div id="startmenu-howtoplay" >
+        <h2>How to play</h2>
+        <p><b>A/D</b>: turn left/right</p>
+        <p><b>← → ↑ ↓</b>: change point of view</p>
+        <p>Avoid the wall of the arena and the light wall of the other cycles.</p>
+        <p>Your speed will increase if you run close to the light walls!</p>
+        <p>Press <b>P</b> to pause the game.</p>
+    </div>
+
+
+    <button id="startmenu-start" style="width: 200px; height: 50px;">Play!</button>
+
+</div>

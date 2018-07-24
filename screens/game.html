@@ -1,0 +1,133 @@
+<!--//TODO: why display:none?-->
+<style>
+    .container {
+        position: relative;
+    }
+    #overlay {
+        width: 100%;
+        height: 10%;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+
+    }
+
+    @font-face {
+        font-family: MyFont;
+        url("/Gtek Technology free promo.ttf");
+        font-weight: bold;
+    }
+    #countdown{
+        position: relative;
+        left: 50%;
+        top: 50%;
+
+        font-family: Consolas,monaco,monospace;
+        font-size: 96px;
+        font-style: normal;
+
+        font-variant: normal;
+        font-weight: 500;
+        color: whitesmoke;
+        line-height: 26.4px;
+        text-align: center;
+
+
+    }
+
+    #pause{
+        position: absolute;
+        left: 5%;
+        /*top: 50%;*/
+
+        font-family: Consolas,monaco,monospace;
+        font-size: 16px;
+        font-style: normal;
+
+        font-variant: normal;
+        font-weight: 500;
+        color: whitesmoke;
+        text-align: center;
+        margin: 0 auto;
+        visibility: hidden;
+    }
+
+    #speed{
+
+        position: absolute;
+        left: 1%;
+        top: 1%;
+        z-index: 10;
+
+
+        font-family: Consolas,monaco,monospace;
+        font-size: 48px;
+        font-style: normal;
+        color: whitesmoke;
+        visibility:  hidden;
+    }
+
+    #gameover{
+        position: absolute;
+        left: 40%;
+        top: 20%;
+
+        font-family: Consolas,monaco,monospace;
+        font-size: 96px;
+        font-style: normal;
+
+        font-variant: normal;
+        font-weight: 500;
+        color: whitesmoke;
+        line-height: 26.4px;
+        text-align: center;
+
+        visibility: hidden;
+    }
+    #win{
+        position: absolute;
+        left: 40%;
+        top: 20%;
+
+        font-family: Consolas,monaco,monospace;
+        font-size: 96px;
+        font-style: normal;
+
+        font-variant: normal;
+        font-weight: 500;
+        color: whitesmoke;
+        line-height: 26.4px;
+        text-align: center;
+
+        visibility: hidden;
+    }
+
+
+    .playerLabel {
+        text-align: center;
+        position: absolute;
+        color: #fff;
+        background-color: rgba(40,40,40, .6);
+        /*opacity: 0.8;*/
+    }
+
+
+</style>
+<div id="game">
+
+    <div class="container">
+        <!--<div id="player-labels">-->
+
+        <canvas id="webgl"></canvas>
+        <canvas id="text"></canvas>
+        <div id="overlay">
+            <span id="countdown"></span>
+            <span id="speed">Speed:</span>
+            <span id="pause">The game is paused. Press P to play or ESC to end the game.</span>
+            <span id="gameover">Game over!</span>
+            <span id="win">You win!</span>
+
+
+        </div>
+    </div>
+</div>

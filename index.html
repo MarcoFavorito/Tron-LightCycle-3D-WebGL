@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <title>WebGL LightCycle Game</title>
+
+    <!--External libs-->
+    <script src="libs/webgl-utils.js"></script>
+    <script src="libs/webgl-debug.js"></script>
+    <script src="libs/cuon-utils.js"></script>
+    <script src="libs/cuon-matrix.js"></script>
+
+
+    <!--Misc scripts-->
+    <script src="configurations.js"></script>
+    <script src="constants.js"></script>
+    <script src="misc/misc-utils.js"></script>
+    <script src="misc/FileManager.js"></script>
+    <script src="misc/ScreenManager.js"></script>
+    <script src="misc/Screen.js"></script>
+    <script src="misc/file-loader.js"></script>
+    <script src="misc/KeyboardManager.js"></script>
+    <script src="webgl/Camera.js"></script>
+
+    <!--Object class definitions-->
+    <script src="webgl/textures.js"></script>
+    <script src="objects/Drawable.js"></script>
+    <script src="objects/DrawManager.js"></script>
+    <script src="objects/LightCycle.js"></script>
+    <script src="objects/LightWall.js"></script>
+    <script src="objects/LightWallManager.js"></script>
+    <script src="objects/Explosion.js"></script>
+    <!--<script src="objects/Grid.js"></script>-->
+
+
+    <!--WebGL scripts-->
+    <!--They will be called from screens/*.js scripts-->
+
+    <script src="webgl/webgl-myutils.js"></script>
+    <script src="webgl/OBJReader.js"></script>
+    <script src="webgl/population.js"></script>
+    <!--<script src="webgl/grid.js"></script>-->
+    <script src="webgl/main.js"></script>
+
+
+    <!--Launcher script (entry point)-->
+    <script src="launch.js"></script>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+        }
+        canvas {
+            display: block;  /* prevents scrollbar */
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body  scroll="no" style="overflow: hidden">
+</body>
+
+
+</html>
